@@ -1,0 +1,8 @@
+{% extends 'base_app.html' %}
+{% block content %}
+<div class="jumbotron">
+  <p>Welcome to our band page!</p>
+  <p>Wanna sign up for our mailer?</p>
+    <a href="{{url_for('signup')}}">Sign up here!</a>
+</div>
+{% endblock %}

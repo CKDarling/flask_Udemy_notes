@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is the base Navbar!</h1>
+    <!-- url_for is a simple function to grab the index function from the back end and return the page -->
+    <a href="{{url_for('index')}}">Super Cool Index Link</a>
+    <a href="{{url_for('other_page')}}">Super Cool Other Link</a>
+    <br>
+    {% block content%}
+
+    {% endblock%}
+
+  <h3>This is another header!</h3>
+  {% block other%}
+
+  {% endblock%}
+  </body>
+</html>

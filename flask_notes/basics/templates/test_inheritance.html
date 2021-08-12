@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block content%}
+<h3>what a neat tool.</h3>
+<a href="{{ url_for('static',filename='lab_pic.JPG')}}">Click this for puppy</a>
+{% endblock%}
+
+{% block other%}
+<h3>This is a second block with a different name. </h3>
+{% endblock%}
+
+
+<!-- Filters -->
+<!--  This capitalizes the first letter of the string utilizing pipes-->
+<!-- {{ name |capitalize}} -->

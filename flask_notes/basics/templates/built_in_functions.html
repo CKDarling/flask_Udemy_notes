@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>We're testing python function usage on the front-end! </h1>
+
+    <h2 style='color:red'>This webpage was made by {{variables[0]}}, and his favorite number is {{variables[1]}}</h2>
+    <!-- dictionary method -->
+    <h2>This webpage was made by {{dict_variables['var_1']}}, and his favorite number is {{dict_variables['var_2']}}</h2>
+
+    <h3>This is Control Flow on the Front-End</h3>
+    <ul>
+      {% for item in loop_list %}
+        <li>{{item}}</li>
+      {% endfor %}
+    </ul>
+
+    {% if 1 in loop_list %}
+      <p>Nice little paragraph object to be generated only once. </p>
+
+    {% endif %}
+
+    {% if user_logged_in %}
+      <p>You knew the secret code!</p>
+    {% else %}
+      <p style="color:blue">You did not know the secret code!</p>
+    {% endif %}
+  </body>
+</html>

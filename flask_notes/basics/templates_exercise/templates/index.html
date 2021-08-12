@@ -1,0 +1,21 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1>Username Page</h1>
+  <p>Usernames must follow three rules:</p>
+  <ul>
+    <li>Contain a lowercase letter.</li>
+    <li>Cointain an uppercase letter.</li>
+    <li>Must end in a number. </li>
+  </ul>
+  <form action="{{url_for('success')}}">
+    <label for="username">Username</label>
+    <input type="text" name='username'>
+    <br>
+    <input type="submit" value='submit'>
+
+  </form>
+</div>
+
+{% endblock %}

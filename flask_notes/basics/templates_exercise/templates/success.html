@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% if username_check %}
+  <h1>Your username, {{username}}, was adequate.</h1>
+
+{% else %}
+  <h1>Your username, {{username}}, was not adequate.</h1>
+
+{% endif %}
+
+{% endblock %}
