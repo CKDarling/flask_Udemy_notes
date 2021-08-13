@@ -17,9 +17,9 @@
             Puppy Pages
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton_puppy">
-            <a class="dropdown-item" href="{{url_for('list_pup')}}">Puppies</a>
-            <a class="dropdown-item" href="{{url_for('add_pup')}}">Add Puppy</a>
-            <a class="dropdown-item" href="{{url_for('del_pup')}}">Delete Puppy</a>
+            <a class="dropdown-item" href="{{url_for('puppies.list')}}">Puppies</a>
+            <a class="dropdown-item" href="{{url_for('puppies.add')}}">Add Puppy</a>
+            <a class="dropdown-item" href="{{url_for('puppies.delete')}}">Delete Puppy</a>
           </div>
         </div>
 
@@ -28,9 +28,9 @@
            Owner Pages
          </button>
          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton_owner">
-           <a class="dropdown-item" href="{{url_for('list_owner')}}">Owners</a>
-           <a class="dropdown-item" href="{{url_for('add_owner')}}">Add Owner</a>
-           <a class="dropdown-item" href="{{url_for('del_owner')}}">Delete Owner</a>
+           <a class="dropdown-item" href="{{url_for('owners.list')}}">Owners</a>
+           <a class="dropdown-item" href="{{url_for('owners.add')}}">Add Owner</a>
+           <a class="dropdown-item" href="{{url_for('owners.delete')}}">Delete Owner</a>
          </div>
        </div>
       </nav>
