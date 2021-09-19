@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1>Home Page of Authentication Practice Materials</h1>
+  {% if current_user.is_authenticated %}
+  <p>Hi {{current_user.username}}!</p>
+  {% else %}
+  <p>please log in or register</p>
+  {% endif %}
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+
+
+# REST: Representational State Transfer
+  * Allows us to provide interactions and operations between computer systems online.
+  * Standardized apis in this form are called RESTful
+
+# REST APIs allow users to communicate with applications programatically.
+
+# Create - POST - Create new object
+# Read - GET - Read information about and object or multiple objects
+# Update - PUT - Update information about an existing object or objects
+# Delete - DELETE - Delete object(s)
+
+
+# Best data type to transport over APIs is JSON
