@@ -1,7 +1,7 @@
 from flask_sql import db, Puppy
 
 ## CREATE
-add_puppy = Puppy('Rufus',5)
+add_puppy = Puppy('Franky',20,"Pitbull")
 db.session.add(add_puppy)
 db.session.commit()
 
@@ -12,7 +12,7 @@ for i in all_puppies:
 
 ## SELECT (By ID)
 
-puppy_one = Puppy.query.get(1)
+# puppy_one = Puppy.query.get(1)
 
 ## FILTER
 query_string = Puppy.query.filter_by(name='Franky')
@@ -30,7 +30,7 @@ db.session.commit()
 
 puppy = Puppy.query.get(2)
 db.session.delete(puppy)
-db.session.commit
+db.session.commit()
 
 
 ## READ
